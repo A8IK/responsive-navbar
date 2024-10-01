@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+  .gradient-text {
+    color: #ff00ff;
+  }
+  
+  /* Gradient effect for medium and larger screens */
+  @media (min-width: 768px) {
+    .gradient-text {
+      background: linear-gradient(to right, #ff00ff, #2f5aff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+  
